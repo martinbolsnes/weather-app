@@ -4,6 +4,8 @@ import axios from 'axios';
 import { BsSearch } from 'react-icons/bs';
 import Weather from '../components/Weather';
 import Spinner from '../components/Spinner';
+import ShowTime from '../components/ShowTime';
+import AdditionalWeather from '../components/AdditionalWeather';
 
 export default function Home() {
   const [city, setCity] = useState('');
@@ -17,10 +19,10 @@ export default function Home() {
     setLoading(true);
     axios.get(url).then((response) => {
       setWeather(response.data);
-      //console.log(response.data);
+      console.log(response.data);
+      setLoading(false);
+      setCity('');
     });
-    setCity('');
-    setLoading(false);
   };
 
   if (loading) {
@@ -49,8 +51,15 @@ export default function Home() {
                 <BsSearch></BsSearch>
               </button>
             </div>
+            <div className='flex flex-col items-center'>
+              <ShowTime />
+            </div>
           </form>
           {weather.main && <Weather data={weather} />}
+          <div className='flex flex-col items-center mt-10'>
+            <span className='border border-white w-3/4 opacity-60'></span>
+          </div>
+          {weather.main && <AdditionalWeather data={weather} />}
         </main>
       </div>
     );
