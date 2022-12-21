@@ -12,11 +12,13 @@
     "axios": "^1.2.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "moment": "^2.29.4",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "react-spinners": "^0.13.7"
+    "react-spinners": "^0.13.7",
+    "weather-icons": "git+https://github.com/erikflowers/weather-icons.git"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
