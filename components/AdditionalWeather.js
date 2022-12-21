@@ -13,7 +13,7 @@ function AdditionalWeather({ data }) {
           <h4 className='text-white text-xs opacity-60'>Wind</h4>
         </div>
         <div className='flex flex-col items-center align-center'>
-          <i className='wi wi-raindrop text-white text-2xl mb-2 '></i>
+          <i className='wi wi-humidity text-white text-2xl mb-2 '></i>
           <h3 className='text-white'>{data.main.humidity}%</h3>
           <h4 className='text-white text-xs opacity-60'>Humidity</h4>
         </div>
