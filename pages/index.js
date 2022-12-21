@@ -37,7 +37,7 @@ export default function Home() {
         </Head>
         <main className='flex flex-col bg-gradient-to-br from-lightblue to-darkblue w-full h-screen'>
           <form onSubmit={fetchWeather} className='flex flex-col items-center'>
-            <div className='mt-20 flex flex-row align-center'>
+            <div className='mt-16 flex flex-row align-center'>
               <input
                 onChange={(e) => setCity(e.target.value)}
                 type='text'
@@ -57,7 +57,7 @@ export default function Home() {
           </form>
           {weather.main && <Weather data={weather} />}
           <div className='flex flex-col items-center mt-10'>
-            <span className='border border-white w-3/4 opacity-60'></span>
+            <span className='border border-white w-4/5 md:w-2/5 opacity-60'></span>
           </div>
           {weather.main && <AdditionalWeather data={weather} />}
         </main>

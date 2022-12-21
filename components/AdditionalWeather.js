@@ -6,7 +6,7 @@ function AdditionalWeather({ data }) {
   const roundedwind = Math.round(wind * 10) / 10;
   return (
     <div className='flex justify-center'>
-      <div className='flex justify-between w-3/4 items-center ml-4 mr-4 mt-6'>
+      <div className='flex justify-between w-4/5 md:w-2/5 items-center ml-4 mr-4 mt-6'>
         <div className='flex flex-col items-center align-center'>
           <i className='wi wi-strong-wind text-white text-2xl mb-2'></i>
           <h3 className='text-white'>{roundedwind} m/s</h3>
