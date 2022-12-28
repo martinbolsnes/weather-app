@@ -42,7 +42,7 @@ export default function Home() {
                 onChange={(e) => setCity(e.target.value)}
                 type='text'
                 placeholder='Search location'
-                className='placeholder:text-white placeholder:text-opacity-60 font-medium p-2 rounded-md text-white bg-transparent border-solid border-2 border-white focus:outline-none'
+                className='placeholder:text-white placeholder:text-opacity-60 font-medium p-2 text-white bg-transparent border-solid border-b-2 border-white focus:outline-none'
               ></input>
               <button
                 className='ml-2 bg-transparent text-white pl-4 pr-4 rounded-md font-serif absolute right-0 top-3.5'
