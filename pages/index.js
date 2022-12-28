@@ -31,12 +31,10 @@ export default function Home() {
       console.log(err);
     }
   };
-
-  if (loading) {
-    return <Spinner />;
-  }
   if (err) {
     return <Error />;
+  } else if (loading) {
+    return <Spinner />;
   } else {
     return (
       <div>
