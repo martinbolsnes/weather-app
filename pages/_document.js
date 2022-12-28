@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html className='bg-gradient-to-br from-lightblue to-darkblue w-full h-screen'>
         <Head>
           <link rel='preconnect' href='https://fonts.googleapis.com'></link>
           <link
@@ -21,7 +21,7 @@ class MyDocument extends Document {
             rel='stylesheet'
           ></link>
         </Head>
-        <body className='bg-gradient-to-br from-lightblue to-darkblue w-full h-screen'>
+        <body>
           <Main />
           <NextScript />
         </body>
